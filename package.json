@@ -6,13 +6,14 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/server",
+    "build": "tsc",
+    "start": "node dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "",
   "dependencies": {
-    "@types/uuid": "^10.0.0",
     "bcrypt": "^6.0.0",
     "better-sqlite3": "^11.10.0",
     "express": "^5.1.0",
@@ -23,6 +24,7 @@
     "@types/better-sqlite3": "^7.6.13",
     "@types/express": "^5.0.2",
     "@types/node": "^22.15.19",
+    "@types/uuid": "^10.0.0",
     "ts-node": "^10.9.2",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3"
