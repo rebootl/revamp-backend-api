@@ -149,10 +149,10 @@ app.post('/logout', (req: Request, res: Response): void => {
 
 // Middleware to check if user is logged in
 function isLoggedIn(req: Request, res: Response, next: () => void) {
-  const sessionId = req.cookies[cookieName];
+  const sessionId = req.cookies?.[cookieName];
   
   if (!sessionId) {
-    res.status(401).send({ message: 'Not logged in' });
+    res.status(401).json({ message: 'Not logged in' });
     return;
   }
 
