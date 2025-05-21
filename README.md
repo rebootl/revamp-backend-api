@@ -2,11 +2,11 @@
 
 This is currently a DEMO / WORK IN PROGRESS, do not use in production as is.
 
-## Test Endpoints
+## Endpoints
 
-These endpoints are provided for testing the server's connectivity and basic request handling.
+### Test Text
 
-### GET /hello
+**Endpoint:** `GET /hello`
 
 **Description:**
 Returns a simple text greeting message. Useful for testing if the server is running.
@@ -23,7 +23,9 @@ const text = await response.text();
 console.log(text); // "Hello, this is some text data!"
 ```
 
-### GET /api/hello
+### Test JSON
+
+**Endpoint:** `GET /api/hello`
 
 **Description:**
 Returns a JSON greeting message. Useful for testing JSON responses.
@@ -41,8 +43,6 @@ const response = await fetch('http://localhost:3000/api/hello');
 const data = await response.json();
 console.log(data); // { message: "Hello, this is some JSON data from the server backend!" }
 ```
-
-## Authentication Endpoints
 
 ### Login
 
