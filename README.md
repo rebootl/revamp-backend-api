@@ -46,7 +46,7 @@ console.log(data); // { message: "Hello, this is some JSON data from the server 
 
 ### Login
 
-**Endpoint:** `POST /login`
+**Endpoint:** `POST /api/login`
 
 **Request Body:**
 ```json
@@ -102,7 +102,7 @@ try {
 
 ### Logout
 
-**Endpoint:** `POST /logout`
+**Endpoint:** `POST /api/logout`
 
 **Response:**
 ```json
@@ -139,7 +139,7 @@ try {
 
 ### Protected Endpoint Example
 
-**Endpoint:** `GET /protected`
+**Endpoint:** `GET /api/protected`
 
 **Response:**
 ```json

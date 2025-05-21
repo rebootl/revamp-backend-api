@@ -173,7 +173,7 @@ function isLoggedIn(req: Request, res: Response, next: () => void) {
 }
 
 // Example protected endpoint
-app.get('/protected', isLoggedIn, (req: Request, res: Response) => {
+app.get('/api/protected', isLoggedIn, (req: Request, res: Response) => {
   res.json({ message: 'This is a protected endpoint' });
 });
 
